@@ -1,3 +1,6 @@
 <?php
+//[ex2-610] Регулярные задачи
+//$MESS['AGENT_MESSAGE'] = 'Запуск агента ex2_610. С #LAST_TIME# изменилось #COUNT# рецензий';
+//[ex2-610] Регулярные задачи
 
-$MESS['AGENT_CNT_REV_MESSAGE'] = '«Запуск агента ex2_610. С #LAST_TIME# изменилось #REV_CNT# рецензий';
+$MESS['AGENT_MESSAGE'] = "Запуск агента ex2_610. С #TIME# изменилось #COUNT# рецензий";

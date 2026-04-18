@@ -8,9 +8,9 @@ IncludeTemplateLangFile(__FILE__);
 
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <?
-    Bitrix\Main\Page\Asset::getInstance()->addString('<meta property="og:description" content="'. $APPLICATION->ShowMeta("ex2_meta") .'">');
-    ?>
+<!--    [ex2-30] Подготовка-->
+    <meta name="ex2_meta" content="<? $APPLICATION->ShowProperty('ex2_meta') ?>">
+<!--    [ex2-30] Подготовка-->
 	<? $APPLICATION->ShowHead(); ?>
 	<link href="<?= SITE_TEMPLATE_PATH ?>/common.css" type="text/css" rel="stylesheet" />
 	<link href="<?= SITE_TEMPLATE_PATH ?>/colors.css" type="text/css" rel="stylesheet" />
@@ -142,8 +142,6 @@ IncludeTemplateLangFile(__FILE__);
 					</div>
 				</div>
 
-                <?php $APPLICATION->ShowViewContent('ex2_1'); ?>
-
 				<div class="content-block">
 					<div class="content-block-inner">
 
@@ -156,6 +154,9 @@ IncludeTemplateLangFile(__FILE__);
 						?>
 					</div>
 				</div>
+<!--                [ex2-580] Кастомизация каталога товаров-->
+                <? $APPLICATION->ShowViewContent("FIRST_REV"); ?>
+<!--                [ex2-580] Кастомизация каталога товаров-->
 
 				<div class="information-block">
 					<div class="top"></div>
